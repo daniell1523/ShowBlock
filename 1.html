@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokaz / Ukryj blok</title>
+    <title>Pokaz / Ukryj</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pokaz / Ukryj blok - przykład</h1>
-    <button onclick="showBlock()">Pokaż/Ukryj blok</button>
-        <div id="myBlock" class="block">
-        <p>To jest przykładowy blok, który można pokazywać i ukrywać/</p>
+    <h1 type="button" onclick="showBlock('myBlock')">Artykuł 1</h1><br>
+    <button onclick="showBlock('myBlock')">Pokaż / Ukryj blok</button>
+    <div id="myBlock" class="blok">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać.</p>
+    </div><br>
+
+    <h1 type="button" onclick="showBlock('myBlock2')">Artykuł 2</h1><br>
+    <button onclick="showBlock('myBlock2')">Pokaż / Ukryj blok</button>
+    <div id="myBlock2" class="blok">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać.</p>
+    </div><br>
+    <h1 type="button" onclick="showBlock('myBlock3')">Artykuł 3</h1><br>
+    <button onclick="showBlock('myBlock3')">Pokaż / Ukryj blok</button>
+    <div id="myBlock3" class="blok">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać.</p>
     </div>
+
     <script>
-        document.getElementById("MyBlock").style.display = "block";
-        function showBlock() {
-        if (document.getElementById("myBlock").
-        style.display == "block") {
-            document.getElementById("myBlock").style.display = "none";
-        } else {
-            document.getElementById("myBlock").style.display = "block";
-        }}
-    
-   
-</script>
+        document.getElementById('myBlock').style.display = 'block';
+        function showBlock(ID) {
+            if (document.getElementById(ID).style.display == "none" || document.getElementById(ID).style.display == '') {
+                document.getElementById(ID).style.display = 'block';
+            } else {
+                document.getElementById(ID).style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
