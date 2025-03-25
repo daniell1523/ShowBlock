@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokaz / Ukryj blok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pokaz / Ukryj blok - przykład</h1>
+    <button onclick="showBlock()">Pokaż/Ukryj blok</button>
+        <div id="myBlock" class="block">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać/</p>
+    </div>
+    <script>
+        document.getElementById("MyBlock").style.display = "block";
+        function showBlock() {
+        if (document.getElementById("myBlock").
+        style.display == "block") {
+            document.getElementById("myBlock").style.display = "none";
+        } else {
+            document.getElementById("myBlock").style.display = "block";
+        }}
+    
+   
+</script>
+</body>
+</html>
