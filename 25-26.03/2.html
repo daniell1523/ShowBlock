@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokaz / Ukryj</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 type="button" onmouseover="showBlock('MyBlock')">Artykuł 1</h1><br>
+    <button onclick="showBlock('MyBlock')">Pokaż / Ukryj blok</button>
+    <div id="MyBlock" class="blok">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać.</p>
+    </div><br>
+
+    <h1 type="button" onmouseover="showBlock('MyBlock2')">Artykuł 2</h1><br>
+    <button onclick="showBlock('MyBlock2')">Pokaż / Ukryj blok</button>
+    <div id="MyBlock2" class="blok">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać.</p>
+    </div><br>
+    <h1 type="button" onmouseover="showBlock('MyBlock3')">Artykuł 3</h1><br>
+    <button onclick="showBlock('MyBlock3')">Pokaż / Ukryj blok</button>
+    <div id="MyBlock3" class="blok">
+        <p>To jest przykładowy blok, który można pokazywać i ukrywać.</p>
+    </div>
+
+    <script>
+       function showBlock(ID) {
+        document.getElementById('MyBlock').style.display = "none";
+        document.getElementById('MyBlock2').style.display = "none";
+        document.getElementById('MyBlock3').style.display = "none";
+        if (document.getElementById(ID).style.display == "none" || document.getElementById(ID).style.display == '') {
+                document.getElementById(ID).style.display = "block";
+            } else {
+                document.getElementById(ID).style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
