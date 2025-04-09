@@ -1,0 +1,20 @@
+* {
+background-color: #EEEEEE;
+font-family: Helvetica;
+}
+#baner{
+background-color: lightblue;
+height: 200px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+img {
+    background-color: lightblue;
+}
+.nav1 {
+    background-color: lightblue;
+    height: 50px;
+    width: 100%;
+}

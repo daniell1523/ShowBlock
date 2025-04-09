@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firma IT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <section id="baner">
+        <img src="logo.png" alt="logo">
+        <nav>
+           <ul>
+                <a href="#">Strona Główna</a>
+                <a href="#">Usługi</a>
+                <a href="#">Kontakt</a>
+        </ul>
+        </nav>
+        <nav1>
+    <img src="grafika.jpg" alt="grafika">
+    <img src="obraz1.png" alt="baner">
+    </nav1>
+    <form>
+        <label for="imie">Imię</label>
+        <input type="imie" id="imie" placeholder="Wpisz imię"><br>
+        <label fpr="nazwisko">Nazwisko</label>
+        <input type="nazwisko" id="nazwisko" placeholder="Wpisz nazwisko"><br>
+        <label fpr="email">E-mail</label>
+        <input type="email" id="email" placeholder="Wpisz email"><br>
+        <label for="zgloszenie">Zgłoszenie</label>
+        <textarea id="zgloszenie" rows="15" cols="30" placeholder="Wpisz treść zgłoszenia"></textarea><br>
+        <input type="checkbox" id="checkbox1" name="regulamin">
+        <label for="checkbox1">Zapoznałem się z regulaminem</label><br>
+        <button type="button" onclick="ResetujDane()">Resetuj</button>
+        <button type="button" onclick="PrześlijDane()">Prześlij</button>
+    </form>
+</body>
+</html>
